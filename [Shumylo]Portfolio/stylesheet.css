@@ -113,12 +113,22 @@ textarea {
   height: 213px;
 }
 
+input[type=submit] {
+  padding: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 input:focus, textarea:focus {
   border: 1px solid #97d6eb;
 }
 
 footer {
   justify-content: flex-end;
+}
+#submit {
+  background-color: lightblue;
 }
 
 @media (min-width: 768px) {
