@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 .nav ul {
   list-style: none;
   background-color: lightblue;
@@ -18,10 +22,6 @@
   padding: 10px;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +34,14 @@ body {
 a.active {
   background-color: #fff;
   color: #444;
+}
+
+.facts, .food {
+  border-style: solid;
+}
+
+.food ul li {
+  list-style-type: none;
 }
 
 a {
@@ -63,7 +71,7 @@ h1 {
   width: 200px;
   height: 100%;
   margin: .75vw;
-  box-shadow: 7.5px 7.5px 7.5px #888888;
+  box-shadow: 6.75px 6.75px 6.75px #888888;
   border-radius: 20px;
 }
 
@@ -141,7 +149,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) (min-height: 850px) {
   .header-container {
     display: flex;
     flex-flow: column wrap;
@@ -154,6 +162,14 @@ footer {
   }
   .nav ul {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  @media screen and (max-height: 850px) {
+  .header-container h1 {
+    font-size: 18px;
+    }
   }
 }
 
