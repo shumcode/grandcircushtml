@@ -3,7 +3,7 @@ html {
 }
 
 .nav ul {
-  list-style: none;
+  list-style-type: none;
   background-color: lightblue;
   border-radius: 5px;
   display: flex;
@@ -25,23 +25,31 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-.nav a:hover {
-  background-color: silver;
+.nav li:hover {
+  background-color: #7bbdff;
+  border-radius: 5px;
 }
 
-a.active {
+.nav a.active {
   background-color: #fff;
   color: #444;
 }
 
 .facts, .food {
   border-style: solid;
+  border-radius: 20px;
+  border-color: lightblue;
 }
 
 .food ul li {
-  list-style-type: none;
+  padding: 10px;
+}
+
+.facts ol li {
+  padding: 10px;
 }
 
 a {
@@ -55,13 +63,14 @@ p {
 
 h1 {
   font-family: 'Droid Sans', sans-serif;
+  color: orange;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
   justify-content: center;
 }
 
 .img-container {
-  padding: .5vw
-  font-size: 0;
+  padding: .5vw;
   flex-flow: row wrap;
   display: flex;
 }
@@ -133,8 +142,25 @@ input:focus, textarea:focus {
 }
 
 footer {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
 }
+.footercontainer {
+  display: flex;
+}
+.footer1 {
+  margin: 20px 20px 0px 0px;
+}
+.footercontainer li {
+  display: flex;
+  flex-direction: row;
+}
+
+.footercontainer img:hover {
+  background-color: #7bbdff;
+  border-radius: 50%;
+}
+
 #submit {
   background-color: lightblue;
 }
@@ -149,7 +175,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) (min-height: 850px) {
+@media (min-width: 768px) {
   .header-container {
     display: flex;
     flex-flow: column wrap;
@@ -170,6 +196,24 @@ footer {
   .header-container h1 {
     font-size: 18px;
     }
+  }
+}
+
+@media screen and (max-width: 175px) {
+  .header-container h1 {
+    font-size: 16px;
+  }
+  .heading1 h2 {
+    font-size: 14px;
+  }
+  .heading2 h2 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .footer1, .footer2 {
+    margin: auto;
   }
 }
 
