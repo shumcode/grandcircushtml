@@ -38,10 +38,15 @@ body {
   color: #444;
 }
 
+.heading1, .heading2 {
+  padding-left: 15px;
+}
+
 .facts, .food {
   border-style: solid;
   border-radius: 20px;
   border-color: lightblue;
+  margin: auto;
 }
 
 .food ul li {
@@ -62,7 +67,7 @@ p {
 }
 
 h1 {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   color: orange;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
@@ -100,7 +105,7 @@ form {
   flex-direction: column;
   align-items: center;
   border-style: inset;
-  max-width: 50%;
+  max-width: 66.6%;
   padding: 20px;
   border-radius: 5px;
 }
@@ -145,12 +150,19 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .footercontainer {
   display: flex;
 }
+
 .footer1 {
   margin: 20px 20px 0px 0px;
 }
+
+.footer3 img {
+  visibility: hidden;
+}
+
 .footercontainer li {
   display: flex;
   flex-direction: row;
@@ -189,6 +201,15 @@ footer {
   .nav ul {
     justify-content: flex-end;
   }
+  .facts li {
+    font-size: 1.35em;
+  }
+  .food li {
+    font-size: 1.35em;
+  }
+  .heading1 h2, .heading2 h2 {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -201,7 +222,7 @@ footer {
 
 @media screen and (max-width: 175px) {
   .header-container h1 {
-    font-size: 16px;
+    text-align: center;
   }
   .heading1 h2 {
     font-size: 14px;
@@ -211,9 +232,45 @@ footer {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .header-container h1 {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 300px) {
+  .heading1, .heading2 {
+    display: flex;
+    justify-content: center;
+  }
+  .heading1 h2 {
+    font-size: 14px;
+  }
+  .heading2 h2 {
+    font-size: 14px;
+  }
+  input {
+    font-size: 10px;
+  }
+  .facts, .food li {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+   h1 {
+    font-size: 18px;
+  }
+  .heading1, .heading2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 240px) {
   .footer1, .footer2 {
-    margin: auto;
+    font-size: 10px;
   }
 }
 
