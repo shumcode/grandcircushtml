@@ -2,15 +2,15 @@ html {
   box-sizing: border-box;
 }
 
-.nav ul {
-  list-style-type: none;
+.navbarcontainer {
   background-color: lightblue;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.nav li {
+
+.navbar {
   font-size: 1.2em;
   font-family: 'Raleway', sans-serif;
 }
@@ -28,12 +28,12 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.nav li:hover {
+.navbar:hover {
   background-color: #7bbdff;
   border-radius: 5px;
 }
 
-.nav a.active {
+.navbar a.active {
   background-color: #fff;
   color: #444;
 }
@@ -69,7 +69,7 @@ p {
 h1 {
   font-family: 'Audiowide', sans-serif;
   color: orange;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
   display: flex;
   justify-content: center;
 }
@@ -100,12 +100,11 @@ img {
 }
 
 form {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-style: inset;
-  max-width: 66.6%;
+  margin: 5px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -117,8 +116,8 @@ label {
 }
 
 input, textarea {
-  width:75%;
-  height:27px;
+  width: 75%;
+  height: 27px;
   background:#efefef;
   border:1px solid #dedede;
   padding:10px;
@@ -143,7 +142,7 @@ input[type=submit] {
 }
 
 input:focus, textarea:focus {
-  border: 1px solid #97d6eb;
+  border: 1px solid lightblue;
 }
 
 footer {
@@ -173,17 +172,20 @@ footer {
   background-color: lightblue;
 }
 
-@media (min-width: 768px) {
-  .nav ul {
+@media screen and (min-width: 768px) {
+  .navbarcontainer {
     display: flex;
     flex-direction: row;
   }
   p {
     font-size: 1.5em;
   }
+  .contactform {
+    width: 768px;
+  }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-container {
     display: flex;
     flex-flow: column wrap;
@@ -194,7 +196,7 @@ footer {
   .nav {
     order: 1;
   }
-  .nav ul {
+  .navbarcontainer {
     justify-content: flex-end;
   }
   .facts li {
@@ -245,12 +247,15 @@ footer {
   .heading2 h2 {
     font-size: 14px;
   }
-  input {
-    font-size: 10px;
-  }
   .facts, .food li {
     font-size: 12px;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  input, textarea {
+    font-size: 10px;
   }
 }
 
@@ -277,14 +282,5 @@ footer {
 @media screen and (min-width: 240px) {
   .footer3 img {
     display: none;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  header div {
-    margin: 0;
-  }
-  header {
-    padding: 0;
   }
 }
