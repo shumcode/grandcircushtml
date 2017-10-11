@@ -66,6 +66,8 @@ a {
 p {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 h1 {
