@@ -47,10 +47,12 @@ body {
   border-radius: 20px;
   border-color: lightblue;
   margin: 0 auto;
+  max-width: 768px;
 }
 
 .food ul li {
   padding: 10px;
+  list-style-type: circle;
 }
 
 .facts ol li {
@@ -155,10 +157,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.facts, .food {
-  margin: 0 5px 0 5px;
 }
 
 .footercontainer img:hover {
@@ -281,5 +279,17 @@ footer {
 @media screen and (min-width: 240px) {
   .footer3 img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading1, .heading2 {
+    text-align: center;
+  }
+  .heading1 {
+    margin-right: 495px;
+  }
+  .heading2 {
+    margin-right: 520px;
   }
 }
