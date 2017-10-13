@@ -138,14 +138,7 @@ textarea {
   height: 213px;
 }
 
-input[type=submit] {
-  padding: 5px;
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-
-input:focus, textarea:focus {
+button:focus, textarea:focus {
   border: 1px solid lightblue;
 }
 
@@ -166,8 +159,14 @@ footer {
   border-radius: 50%;
 }
 
-#submit {
+.submit {
   background-color: lightblue;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  padding: 10px 50px 10px 50px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
