@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <title>Contact Christian Shumylo</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -29,14 +30,14 @@
 <!-- Contact Field -->
 
       <div class="contactform">
-        <form class="" action="submit" method="post">
+        <form class="" action="email.php" method="post" enctype="text/plain">
           <label>Name</label>
-            <input name="name" placeholder="Type Here">
+            <input name="name" id="name" placeholder="Type Here">
           <label>Email</label>
-            <input name="email" type="email" placeholder="Type Here">
+            <input name="email" id="email" type="email" placeholder="Type Here">
           <label>Message</label>
-            <textarea name="message" placeholder="Type Here"></textarea>
-          <button type="submit" class="submit">Submit</button>
+            <textarea name="message" id="message" placeholder="Type Here"></textarea>
+          <button type="submit" class="submit" value="Submit">Submit</button>
         </form>
       </div>
 
